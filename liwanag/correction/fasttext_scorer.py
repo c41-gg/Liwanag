@@ -1,5 +1,5 @@
 import numpy as np
-from gensim.models import FastText
+from gensim.models import FastText # type: ignore
 
 
 class FastTextScorer:

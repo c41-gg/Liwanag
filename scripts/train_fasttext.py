@@ -1,4 +1,4 @@
-from gensim.models import FastText
+from gensim.models import FastText # type: ignore
 import multiprocessing
 
 model = FastText(

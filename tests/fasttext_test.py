@@ -1,4 +1,4 @@
-import pytest
+import pytest # type: ignore
 from liwanag.correction.fasttext_scorer import FastTextScorer
 
 
