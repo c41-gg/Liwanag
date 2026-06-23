@@ -1,0 +1,4 @@
+pynum
+pytest
+gensim
+multiprocessing
