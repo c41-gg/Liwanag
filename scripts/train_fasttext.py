@@ -8,7 +8,7 @@ Usage:
 
 import argparse
 import multiprocessing
-from gensim.models import FastText
+from gensim.models import FastText # type: ignore
 
 def train(corpus_path: str, output_path: str):
     print(f"Training FastText on {corpus_path}...")
