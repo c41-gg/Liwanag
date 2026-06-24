@@ -6,3 +6,4 @@ data/processed/corpus_clean.txt
 corpus_*.txt
 data/raw/CC-100 Tagalog/tl.txt.xz
 .venv/
+.env
