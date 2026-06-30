@@ -7,3 +7,4 @@ nltk
 transformers
 accelerate
 seqval
+nltk

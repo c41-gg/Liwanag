@@ -4,7 +4,7 @@ import os
 
 jar = 'Libraries/FSPOST/stanford-postagger.jar'
 model = 'Libraries/FSPOST/filipino-left5words-owlqn2-distsim-pref6-inf2.tagger'
-sentence = 'Kumain ang bata ng tinapay.'
+sentence = 'Kumain ang bata ng tinapay tinoast ito ng matagal para ipeanut butter.'
 
 with tempfile.NamedTemporaryFile(mode='w', delete=False, suffix='.txt') as f:
     f.write(sentence)

@@ -31,7 +31,6 @@ import torch
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 from nltk import Tree
 from dotenv import load_dotenv
-import os
 
 load_dotenv()  # reads .env into os.environ
 

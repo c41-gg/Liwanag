@@ -7,3 +7,7 @@ corpus_*.txt
 data/raw/CC-100 Tagalog/tl.txt.xz
 .venv/
 .env
+data/processed/.batch_temp
+_silver_tmp_input.txt
+/liwanag/pos_tagger/__pycache__
+/tests/__pycache__
