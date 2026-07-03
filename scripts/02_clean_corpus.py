@@ -19,14 +19,22 @@ def load_text(path: Path) -> str:
 def normalize_text(text: str) -> str:
     text = text.replace("\u2018", "'").replace("\u2019", "'")
     text = text.replace("\u201c", '"').replace("\u201d", '"')
-    text = text.replace("\u2013", "-").replace("\u2014", " - ")
+    text = text.replace("\u2013", "-").replace("\u2014", "-")
+
+    # Non-breaking space
     text = text.replace("\u00A0", " ")
+
+    # Soft hyphen (PDF line-break artifact)
+    text = text.replace("\u00AD", "")
+
     text = text.replace("\t", " ").replace("\r", "\n")
+
     text = re.sub(r"\bSNT\.\d+\.\d+\b", "", text, flags=re.IGNORECASE)
+
     text = re.sub(r"[ ]+", " ", text)
     text = re.sub(r"\n+", "\n", text)
-    text = text.strip()
-    return text
+
+    return text.strip()
 
 
 def protect_abbreviations(text: str) -> str:
