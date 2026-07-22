@@ -1,9 +1,9 @@
 import random
 
-random.seed(43)  # reproducible sample every time you run it
+random.seed(42)  # reproducible sample every time you run it
 
-with open('data\\raw\\CC-100 Tagalog\\corpus_tl.txt', encoding='utf-8') as f_in, \
-     open('data\\raw\\CC-100 Tagalog\\corpus_sample2.txt', 'w', encoding='utf-8') as f_out:
+with open('data/raw/CC-100 Tagalog/corpus_tl.txt', encoding='utf-8') as f_in, \
+     open('data/raw/CC-100 Tagalog/corpus_sample.txt', 'w', encoding='utf-8') as f_out:
     
     for line in f_in:
         if random.random() < 0.009:  
@@ -12,6 +12,6 @@ with open('data\\raw\\CC-100 Tagalog\\corpus_tl.txt', encoding='utf-8') as f_in,
 print("Done.")
 
 # Verify count
-with open('data\\raw\\CC-100 Tagalog\\corpus_sample2.txt') as f:
+with open('data/raw/CC-100 Tagalog/corpus_sample.txt') as f:
     count = sum(1 for _ in f)
 print(f"Sampled: {count:,} sentences")

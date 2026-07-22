@@ -65,13 +65,13 @@ def main() -> None:
     parser.add_argument(
         "input",
         nargs="?",
-        default="data\\raw\\CC-100 Tagalog\\corpus_sample2.txt",
+        default="data/raw/CC-100 Tagalog/corpus_sample.txt",
         help="Input text file to clean (default: combined.txt)",
     )
     parser.add_argument(
         "output",
         nargs="?",
-        default="data\\raw\\CC-100 Tagalog\\corpus_sample2_clean.txt",
+        default="data/processed/corpus_clean2.txt",
         help="Output file for one sentence per line (default: cleaned_sentences.txt)",
     )
     args = parser.parse_args()
